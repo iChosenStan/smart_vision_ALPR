@@ -1,0 +1,25 @@
+# =========================================================
+# SmartVision ALPR — Hiperparâmetros de Treino do Detector de Placa
+# =========================================================
+# Etapa 4: fine-tuning de YOLOv8n no UFPR-VeSV (classe única: "plate").
+# Decisão validada com o usuário: 50 épocas, imgsz=640.
+# =========================================================
+
+model:
+  base_weights: "yolov8n.pt"
+  device: "cuda"
+
+dataset:
+  data_yaml: "datasets/processed/plate_detection/data.yaml"
+
+training:
+  epochs: 50
+  imgsz: 640
+  batch: -1        # -1 = auto batch size (Ultralytics escolhe conforme memória de GPU disponível)
+  optimizer: "auto" # Ultralytics escolhe SGD/AdamW automaticamente conforme o dataset
+  patience: 15      # early stopping: para se val loss não melhorar em 15 épocas
+  project: "outputs/training_runs"
+  name: "plate_detector_yolov8n"
+
+output:
+  best_weights_dest: "models/checkpoints/plate_detector_best.pt"

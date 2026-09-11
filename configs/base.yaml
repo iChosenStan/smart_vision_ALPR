@@ -1,0 +1,50 @@
+# =========================================================
+# SmartVision ALPR — Configuração Base
+# =========================================================
+# Este arquivo centraliza parâmetros globais do projeto.
+# Configurações específicas de cada módulo (ex: treino de
+# um modelo específico) devem viver em arquivos próprios
+# dentro de configs/, herdando ou referenciando este base.
+# =========================================================
+
+project:
+  name: "SmartVision ALPR"
+  version: "0.1.0"
+  seed: 42
+
+paths:
+  datasets_raw: "datasets/raw"
+  datasets_processed: "datasets/processed"
+  models_pretrained: "models/pretrained"
+  models_checkpoints: "models/checkpoints"
+  outputs_logs: "outputs/logs"
+  outputs_predictions: "outputs/predictions"
+  outputs_reports: "outputs/reports"
+
+dataset:
+  name: "UFPR-VeSV"
+  annotations_file: "datasets/raw/annotations.json"
+  images_dir: "datasets/raw/images"
+  # Split é agrupado por placa (identificador único do veículo) para
+  # evitar vazamento de dados entre treino/validação/teste.
+  split:
+    train_ratio: 0.70
+    val_ratio: 0.15
+    test_ratio: 0.15
+
+hardware:
+  device: "cuda"      # "cuda" ou "cpu" — fallback automático deve ser tratado em código
+  mixed_precision: true
+
+logging:
+  level: "INFO"        # DEBUG | INFO | WARNING | ERROR
+  log_to_file: true
+  log_dir: "outputs/logs"
+  rotation: "10 MB"
+  retention: "7 days"
+
+pipeline_targets:
+  ocr_accuracy_min: 0.95
+  classification_accuracy_min: 0.80
+  inference_latency_ms_max: 100
+  target_fps: 20

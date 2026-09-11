@@ -1,0 +1,21 @@
+# =========================================================
+# SmartVision ALPR — Configuração de Inferência do Detector de Placa
+# =========================================================
+# Etapa 4: detecção de placa com modelo fine-tunado no UFPR-VeSV.
+# Diferente de configs/detection.yaml (Etapa 3, modelo genérico), aqui
+# os pesos vêm do treino local (models/checkpoints/), não são baixados
+# automaticamente pelo Ultralytics.
+# =========================================================
+
+model:
+  weights: "models/checkpoints/plate_detector_best.pt"
+  device: "cuda"
+
+inference:
+  confidence_threshold: 0.40
+  iou_threshold: 0.45
+  image_size: 640
+
+# Modelo de classe única — treinado apenas para detectar "plate".
+target_classes:
+  0: "plate"

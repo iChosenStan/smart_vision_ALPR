@@ -1,0 +1,17 @@
+# =========================================================
+# SmartVision ALPR — Configuração de Inferência do OCR de Placa
+# =========================================================
+# Etapa 5: reconhecimento de texto com PaddleOCR (TextRecognition),
+# fine-tunado no UFPR-VeSV a partir de PP-OCRv5_mobile_rec.
+# =========================================================
+
+model:
+  model_name: "PP-OCRv5_mobile_rec"
+  # Diretório com os pesos fine-tunados exportados (formato de inferência
+  # do PaddleX). Gerado por scripts/train_plate_recognizer.py.
+  model_dir: "models/checkpoints/plate_recognizer"
+  # NOTA: "cpu", não "gpu" — PaddlePaddle-GPU e PyTorch (usado pelo
+  # YOLO/classificador) têm um conflito binário conhecido e sem correção
+  # quando ambos rodam no mesmo processo no Windows (ver docs/09_local_setup.md).
+  # O modelo mobile_rec é leve, então o impacto de rodar em CPU é pequeno.
+  device: "cpu"

@@ -1,0 +1,17 @@
+# =========================================================
+# SmartVision ALPR — Configuração do Pipeline Integrado
+# =========================================================
+# Etapa 7: integra VehicleDetector, PlateDetector, OCRReader e
+# VehicleClassifier em um único fluxo por frame.
+# =========================================================
+
+pipeline:
+  # Margem extra ao redor do bbox do veículo antes de recortar (fração da
+  # largura/altura) — evita cortar a placa/detalhes que ficam perto da
+  # borda do bbox de detecção do veículo.
+  crop_margin_ratio: 0.10
+
+  # Área mínima (pixels²) do bbox do veículo para ser processado. Em
+  # 1920x1080, ~2000px² corresponde a um veículo bem pequeno/distante —
+  # ajuste conforme a resolução real das câmeras em produção.
+  min_vehicle_area: 2000

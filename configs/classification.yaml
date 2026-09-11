@@ -1,0 +1,14 @@
+# =========================================================
+# SmartVision ALPR — Configuração de Inferência do Classificador de Veículo
+# =========================================================
+# Etapa 6: classificação multi-tarefa (type, make, model, color) com
+# backbone ResNet34 compartilhado e 4 cabeças independentes.
+# =========================================================
+
+model:
+  weights: "models/checkpoints/vehicle_classifier_best.pt"
+  encoders_path: "models/checkpoints/vehicle_classifier_encoders.json"
+  device: "cuda"
+
+inference:
+  image_size: 224

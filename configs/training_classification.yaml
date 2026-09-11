@@ -1,0 +1,37 @@
+# =========================================================
+# SmartVision ALPR — Hiperparâmetros de Treino do Classificador de Veículo
+# =========================================================
+# Etapa 6: fine-tuning de ResNet34 (ImageNet) com 4 cabeças multi-tarefa.
+# Decisões validadas com o usuário: arquitetura multi-tarefa, backbone ResNet34.
+# =========================================================
+
+model:
+  backbone: "resnet34"
+  pretrained: true
+  dropout: 0.3
+  device: "cuda"
+
+dataset:
+  manifest_path: "datasets/processed/manifest.csv"
+  images_dir: "datasets/raw/images"
+  image_size: 224
+
+training:
+  epochs: 30
+  batch_size: 32
+  learning_rate: 0.0001
+  # Pesos das 4 losses somadas (não precisam somar 1). Ajustados com base
+  # na análise real dos dados (ver docs/06_classification.md):
+  #   - "model" tem 136 classes com cauda longa -> peso maior
+  #   - "color" tem ~25% de rótulos "unknown" -> peso menor, para não
+  #     deixar essa tarefa ruidosa dominar o gradiente compartilhado
+  task_loss_weights:
+    type: 1.0
+    make: 1.0
+    model: 1.5
+    color: 0.5
+  output_dir: "outputs/training_runs/vehicle_classifier"
+
+output:
+  best_weights_dest: "models/checkpoints/vehicle_classifier_best.pt"
+  encoders_dest: "models/checkpoints/vehicle_classifier_encoders.json"

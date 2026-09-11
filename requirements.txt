@@ -1,0 +1,43 @@
+# =========================================================
+# SmartVision ALPR — Dependências do Projeto
+# Python 3.11
+# =========================================================
+# Observação: versões de PyTorch/CUDA devem ser instaladas
+# separadamente no Colab via comando oficial (ver docs/01_setup.md),
+# pois dependem da imagem de GPU disponibilizada pelo ambiente.
+# =========================================================
+
+# --- Core numérico / dados ---
+numpy>=1.26,<2.0
+pandas>=2.2
+matplotlib>=3.9
+
+# --- Configuração / utilitários de projeto ---
+pyyaml>=6.0
+python-dotenv>=1.0
+loguru>=0.7
+tqdm>=4.66
+
+# --- Visão computacional ---
+opencv-python-headless>=4.10
+Pillow>=10.4
+
+# --- Detecção (YOLO) ---
+ultralytics>=8.3
+
+# --- OCR ---
+# PaddleOCR 3.x traz uma API nova baseada em pipelines (TextRecognition,
+# TextDetection, etc.) — confirmado nesta versão durante a Etapa 5.
+# NOTA (Windows/CUDA): a versão exata do paddlepaddle-gpu compatível com
+# sua GPU depende do CUDA instalado — ver instruções no docs/09_local_setup.md
+# antes de instalar este requirements.txt, caso esteja no Windows.
+paddlepaddle-gpu>=3.0
+paddleocr>=3.0
+
+# --- Deep Learning (usado pontualmente em classificação) ---
+# torch / torchvision instalados via comando oficial do PyTorch (ver docs/01_setup.md)
+tensorflow>=2.17
+
+# --- Testes ---
+pytest>=8.3
+pytest-cov>=5.0

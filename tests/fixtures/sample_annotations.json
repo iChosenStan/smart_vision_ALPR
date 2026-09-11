@@ -1,0 +1,534 @@
+[
+  {
+    "filename": "img_00001.jpg",
+    "make": "chevrolet",
+    "model": "pickup_corsa",
+    "color": "unknown",
+    "type": "compact-pickup",
+    "infrared": "yes",
+    "rear_view": "yes",
+    "corners": [
+      {
+        "x": 445,
+        "y": 290
+      },
+      {
+        "x": 597,
+        "y": 281
+      },
+      {
+        "x": 598,
+        "y": 329
+      },
+      {
+        "x": 445,
+        "y": 338
+      }
+    ],
+    "plate": "MAV6C14"
+  },
+  {
+    "filename": "img_00002.jpg",
+    "make": "chevrolet",
+    "model": "vectra",
+    "color": "unknown",
+    "type": "car",
+    "infrared": "yes",
+    "rear_view": "yes",
+    "corners": [
+      {
+        "x": 142,
+        "y": 263
+      },
+      {
+        "x": 236,
+        "y": 262
+      },
+      {
+        "x": 236,
+        "y": 293
+      },
+      {
+        "x": 142,
+        "y": 294
+      }
+    ],
+    "plate": "DWM9F55"
+  },
+  {
+    "filename": "img_00003.jpg",
+    "make": "volkswagen",
+    "model": "gol",
+    "color": "unknown",
+    "type": "car",
+    "infrared": "yes",
+    "rear_view": "yes",
+    "corners": [
+      {
+        "x": 401,
+        "y": 286
+      },
+      {
+        "x": 509,
+        "y": 285
+      },
+      {
+        "x": 511,
+        "y": 317
+      },
+      {
+        "x": 405,
+        "y": 320
+      }
+    ],
+    "plate": "AWM3I82"
+  },
+  {
+    "filename": "img_00004.jpg",
+    "make": "volkswagen",
+    "model": "saveiro",
+    "color": "unknown",
+    "type": "compact-pickup",
+    "infrared": "yes",
+    "rear_view": "no",
+    "corners": [
+      {
+        "x": 81,
+        "y": 260
+      },
+      {
+        "x": 157,
+        "y": 256
+      },
+      {
+        "x": 158,
+        "y": 283
+      },
+      {
+        "x": 80,
+        "y": 286
+      }
+    ],
+    "plate": "KNE1B68"
+  },
+  {
+    "filename": "img_00005.jpg",
+    "make": "kia",
+    "model": "cerato",
+    "color": "unknown",
+    "type": "car",
+    "infrared": "yes",
+    "rear_view": "yes",
+    "corners": [
+      {
+        "x": 151,
+        "y": 199
+      },
+      {
+        "x": 248,
+        "y": 197
+      },
+      {
+        "x": 249,
+        "y": 228
+      },
+      {
+        "x": 149,
+        "y": 230
+      }
+    ],
+    "plate": "MIW6A75"
+  },
+  {
+    "filename": "img_00006.jpg",
+    "make": "volkswagen",
+    "model": "saveiro",
+    "color": "unknown",
+    "type": "compact-pickup",
+    "infrared": "yes",
+    "rear_view": "yes",
+    "corners": [
+      {
+        "x": 447,
+        "y": 429
+      },
+      {
+        "x": 598,
+        "y": 418
+      },
+      {
+        "x": 597,
+        "y": 466
+      },
+      {
+        "x": 447,
+        "y": 477
+      }
+    ],
+    "plate": "ATZ2J77"
+  },
+  {
+    "filename": "img_00007.jpg",
+    "make": "volkswagen",
+    "model": "gol",
+    "color": "unknown",
+    "type": "car",
+    "infrared": "yes",
+    "rear_view": "yes",
+    "corners": [
+      {
+        "x": 421,
+        "y": 396
+      },
+      {
+        "x": 568,
+        "y": 389
+      },
+      {
+        "x": 571,
+        "y": 435
+      },
+      {
+        "x": 420,
+        "y": 443
+      }
+    ],
+    "plate": "AVW6717"
+  },
+  {
+    "filename": "img_00008.jpg",
+    "make": "renault",
+    "model": "master",
+    "color": "unknown",
+    "type": "van",
+    "infrared": "yes",
+    "rear_view": "no",
+    "corners": [
+      {
+        "x": 632,
+        "y": 475
+      },
+      {
+        "x": 759,
+        "y": 466
+      },
+      {
+        "x": 760,
+        "y": 507
+      },
+      {
+        "x": 634,
+        "y": 515
+      }
+    ],
+    "plate": "FBY9J28"
+  },
+  {
+    "filename": "img_00009.jpg",
+    "make": "volkswagen",
+    "model": "gol",
+    "color": "unknown",
+    "type": "car",
+    "infrared": "yes",
+    "rear_view": "no",
+    "corners": [
+      {
+        "x": 101,
+        "y": 232
+      },
+      {
+        "x": 179,
+        "y": 230
+      },
+      {
+        "x": 180,
+        "y": 256
+      },
+      {
+        "x": 100,
+        "y": 258
+      }
+    ],
+    "plate": "KPA3B28"
+  },
+  {
+    "filename": "img_00010.jpg",
+    "make": "hyundai",
+    "model": "hb20",
+    "color": "unknown",
+    "type": "car",
+    "infrared": "yes",
+    "rear_view": "no",
+    "corners": [
+      {
+        "x": 134,
+        "y": 282
+      },
+      {
+        "x": 221,
+        "y": 277
+      },
+      {
+        "x": 222,
+        "y": 306
+      },
+      {
+        "x": 135,
+        "y": 310
+      }
+    ],
+    "plate": "BAE4I91"
+  },
+  {
+    "filename": "img_00011.jpg",
+    "make": "honda",
+    "model": "hr-v",
+    "color": "unknown",
+    "type": "SUV",
+    "infrared": "yes",
+    "rear_view": "no",
+    "corners": [
+      {
+        "x": 120,
+        "y": 273
+      },
+      {
+        "x": 208,
+        "y": 268
+      },
+      {
+        "x": 209,
+        "y": 296
+      },
+      {
+        "x": 122,
+        "y": 301
+      }
+    ],
+    "plate": "FBI3J34"
+  },
+  {
+    "filename": "img_00012.jpg",
+    "make": "fiat",
+    "model": "uno",
+    "color": "unknown",
+    "type": "car",
+    "infrared": "yes",
+    "rear_view": "no",
+    "corners": [
+      {
+        "x": 118,
+        "y": 296
+      },
+      {
+        "x": 204,
+        "y": 292
+      },
+      {
+        "x": 207,
+        "y": 321
+      },
+      {
+        "x": 118,
+        "y": 323
+      }
+    ],
+    "plate": "AWC5D92"
+  },
+  {
+    "filename": "img_00013.jpg",
+    "make": "fiat",
+    "model": "uno",
+    "color": "unknown",
+    "type": "car",
+    "infrared": "yes",
+    "rear_view": "yes",
+    "corners": [
+      {
+        "x": 134,
+        "y": 224
+      },
+      {
+        "x": 234,
+        "y": 224
+      },
+      {
+        "x": 234,
+        "y": 255
+      },
+      {
+        "x": 135,
+        "y": 257
+      }
+    ],
+    "plate": "AHW8685"
+  },
+  {
+    "filename": "img_00014.jpg",
+    "make": "fiat",
+    "model": "pulse",
+    "color": "unknown",
+    "type": "SUV",
+    "infrared": "yes",
+    "rear_view": "yes",
+    "corners": [
+      {
+        "x": 207,
+        "y": 218
+      },
+      {
+        "x": 326,
+        "y": 230
+      },
+      {
+        "x": 321,
+        "y": 265
+      },
+      {
+        "x": 202,
+        "y": 254
+      }
+    ],
+    "plate": "BDE8D38"
+  },
+  {
+    "filename": "img_00015.jpg",
+    "make": "others",
+    "model": "others",
+    "color": "unknown",
+    "type": "car",
+    "infrared": "yes",
+    "rear_view": "no",
+    "corners": [
+      {
+        "x": 130,
+        "y": 274
+      },
+      {
+        "x": 215,
+        "y": 269
+      },
+      {
+        "x": 216,
+        "y": 296
+      },
+      {
+        "x": 132,
+        "y": 301
+      }
+    ],
+    "plate": "QIF0F70"
+  },
+  {
+    "filename": "img_01434.jpg",
+    "make": "volkswagen",
+    "model": "gol",
+    "color": "unknown",
+    "type": "car",
+    "infrared": "yes",
+    "rear_view": "yes",
+    "corners": [
+      {
+        "x": 452,
+        "y": 410
+      },
+      {
+        "x": 606,
+        "y": 405
+      },
+      {
+        "x": 609,
+        "y": 453
+      },
+      {
+        "x": 456,
+        "y": 457
+      }
+    ],
+    "plate": "AWM3I82"
+  },
+  {
+    "filename": "img_01767.jpg",
+    "make": "volkswagen",
+    "model": "gol",
+    "color": "white",
+    "type": "car",
+    "infrared": "no",
+    "rear_view": "no",
+    "corners": [
+      {
+        "x": 339,
+        "y": 407
+      },
+      {
+        "x": 463,
+        "y": 397
+      },
+      {
+        "x": 470,
+        "y": 438
+      },
+      {
+        "x": 343,
+        "y": 447
+      }
+    ],
+    "plate": "AWM3I82"
+  },
+  {
+    "filename": "img_14243.jpg",
+    "make": "chevrolet",
+    "model": "vectra",
+    "color": "black",
+    "type": "car",
+    "infrared": "no",
+    "rear_view": "yes",
+    "corners": [
+      {
+        "x": 143,
+        "y": 262
+      },
+      {
+        "x": 243,
+        "y": 262
+      },
+      {
+        "x": 243,
+        "y": 295
+      },
+      {
+        "x": 144,
+        "y": 295
+      }
+    ],
+    "plate": "DWM9F55"
+  },
+  {
+    "filename": "img_14309.jpg",
+    "make": "chevrolet",
+    "model": "vectra",
+    "color": "black",
+    "type": "car",
+    "infrared": "no",
+    "rear_view": "no",
+    "corners": [
+      {
+        "x": 104,
+        "y": 266
+      },
+      {
+        "x": 190,
+        "y": 260
+      },
+      {
+        "x": 190,
+        "y": 287
+      },
+      {
+        "x": 107,
+        "y": 294
+      }
+    ],
+    "plate": "DWM9F55"
+  }
+]

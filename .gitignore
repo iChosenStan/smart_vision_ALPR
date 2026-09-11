@@ -1,0 +1,60 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# === Ambientes virtuais ===
+venv/
+.venv/
+env/
+.env
+
+# === Jupyter / Colab ===
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# === Dados e modelos (não versionar arquivos pesados) ===
+datasets/raw/*
+datasets/processed/*
+!datasets/raw/.gitkeep
+!datasets/processed/.gitkeep
+
+models/pretrained/*
+models/checkpoints/*
+!models/pretrained/.gitkeep
+!models/checkpoints/.gitkeep
+
+# === Outputs gerados ===
+outputs/logs/*
+outputs/predictions/*
+outputs/reports/*
+!outputs/logs/.gitkeep
+!outputs/predictions/.gitkeep
+!outputs/reports/.gitkeep
+
+# === Pesos e artefatos comuns ===
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pb
+*.weights
+
+# === IDE / SO ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === Testes / cobertura ===
+.pytest_cache/
+.coverage
+htmlcov/
+
+# === Segredos ===
+*.env
+secrets.yaml

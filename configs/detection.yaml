@@ -1,0 +1,26 @@
+# =========================================================
+# SmartVision ALPR — Configuração do Detector de Veículos
+# =========================================================
+# Etapa 3: detecção de veículos com modelo genérico pré-treinado
+# em COCO (SEM fine-tuning) — o UFPR-VeSV não possui anotação de
+# bounding box de veículo, apenas de placa (ver docs/02_dataset.md).
+# =========================================================
+
+model:
+  # Nome do checkpoint pré-treinado do Ultralytics (baixado automaticamente
+  # na primeira execução e cacheado localmente).
+  weights: "yolov8n.pt"
+  device: "cuda"   # "cuda" ou "cpu" — fallback automático deve ser tratado em código
+
+inference:
+  confidence_threshold: 0.35
+  iou_threshold: 0.45
+  image_size: 640
+
+# Classes COCO relevantes para o domínio de veículos (id: nome, conforme
+# o mapeamento padrão de 80 classes do COCO usado pelo Ultralytics).
+target_classes:
+  2: "car"
+  3: "motorcycle"
+  5: "bus"
+  7: "truck"

@@ -1,0 +1,33 @@
+# =========================================================
+# SmartVision ALPR — Hiperparâmetros de Treino do OCR de Placa
+# =========================================================
+# Etapa 5: fine-tuning de PP-OCRv5_mobile_rec no UFPR-VeSV.
+# Decisão validada com o usuário: fine-tuning, modelo base "mobile"
+# (prioriza velocidade sobre a variante "server").
+# =========================================================
+
+model:
+  # Nome do modelo base — deve corresponder a um config de módulo
+  # existente em paddlex/configs/modules/text_recognition/<model_name>.yaml
+  base_model_name: "PP-OCRv5_mobile_rec"
+  # NOTA: "cpu", não "gpu:0" — conflito binário conhecido entre
+  # PaddlePaddle-GPU e PyTorch no mesmo processo, no Windows (ver
+  # docs/09_local_setup.md). O treino do OCR fica mais lento em CPU, mas
+  # ainda é viável (modelo leve, poucas épocas).
+  device: "cpu"
+
+dataset:
+  # Diretório gerado por scripts/build_plate_recognition_dataset.py,
+  # contendo images/{train,val,test} + train.txt/val.txt/test.txt
+  dataset_dir: "datasets/processed/plate_recognition"
+
+training:
+  epochs: 20        # padrão do config base do PaddleX para PP-OCRv5_mobile_rec
+  batch_size: 8
+  learning_rate: 0.001
+  output_dir: "outputs/training_runs/plate_recognizer"
+
+output:
+  # Diretório final com os pesos exportados no formato de inferência
+  # (copiado automaticamente ao fim do treino).
+  exported_model_dest: "models/checkpoints/plate_recognizer"
