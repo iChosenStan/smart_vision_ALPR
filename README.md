@@ -87,11 +87,6 @@ pytest tests/ -v
 - [x] Etapa 6 — Classificação de veículo
 - [x] Etapa 7 — Pipeline de inferência em tempo real
 - [x] Etapa 8 — Avaliação e métricas finais
-- [ ] Etapa 4 — Detecção de placas
-- [ ] Etapa 5 — OCR (ALPR)
-- [ ] Etapa 6 — Classificação de veículo
-- [ ] Etapa 7 — Pipeline de inferência em tempo real
-- [ ] Etapa 8 — Avaliação e métricas finais
 
 Documentação detalhada de cada etapa em [`docs/`](docs/).
 
